@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Design</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+body {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 90%;
+    padding: 50px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    /* hiệu ứng đổ màu giống hình */
+    background: linear-gradient(90deg, #ffffff, #e6fffd, #ffe7f1);
+}
+
+.number {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.desc {
+    width: 180px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.desc-center {
+    margin-top: 25px;
+    width: 250px;
+    text-align: center;
+}
+
+.left-box, .center-box, .right-box {
+    position: relative;
+}
+
+.center-box h1 {
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 25px;
+    margin-left: 30%;
+    background: #000;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.image-block {
+    margin-top: 20px;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 160px 160px 0 0;
+}
+
+.image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* các hình trang trí */
+.shape-blue {
+    width: 80px;
+    height: 80px;
+    background: #a8d5ff;
+    clip-path: polygon(50% 0%, 65% 35%, 100% 35%, 75% 55%, 85% 100%, 50% 75%, 15% 100%, 25% 55%, 0% 35%, 35% 35%);
+    margin: 20px 0;
+}
+
+.shape-gold {
+    width: 90px;
+    height: 90px;
+    background: #d4a531;
+    clip-path: polygon(50% 0%, 60% 35%, 100% 35%, 65% 55%, 75% 100%, 50% 70%, 25% 100%, 35% 55%, 0% 35%, 40% 35%);
+    margin: 20px 0;
+}
+
+.shape-line {
+    position: absolute;
+    top: 50px;
+    left: -80px;
+    width: 120px;
+    height: 120px;
+    border: 1.5px solid #555;
+    border-radius: 50% 50% 0 50%;
+}
+
+</style>
+<body>
+
+<section class="container">
+    <div class="left-box">
+        <p class="number">01</p>
+        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus.</p>
+
+        <div class="shape shape-blue"></div>
+
+        <div class="image-block left-img">
+            <img src="banner.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="center-box">
+        <h1>Create <br> your <br> design</h1>
+        <p class="desc-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Faucibus in libero risus semper habitant arcu eget.
+        </p>
+        <button class="btn">Explore</button>
+
+        <div class="shape shape-line"></div>
+    </div>
+
+    <div class="right-box">
+        <div class="image-block right-img">
+            <img src="download.jpg" alt="">
+        </div>
+
+        <div class="shape shape-gold"></div>
+
+        <p class="number">02</p>
+        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus.</p>
+    </div>
+
+</section>
+</body>
+</html>
