@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chief LA Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1 class="logo">Chief LA</h1>
+      <nav class="menu">
+        <a href="#" class="active"><i>🏠</i> Dashboard</a>
+        <a href="#"><i>💳</i> Transaction</a>
+        <a href="#"><i>🔔</i> Notifications</a>
+        <a href="#"><i>💬</i> Support</a>
+        <a href="#"><i>⚙️</i> Settings</a>
+      </nav>
+      <a href="#" class="logout"><i>↩️</i> Log out</a>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <header class="topbar">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="profile">
+          <div class="notif">🔔</div>
+          <img src="toi.jpeg" alt="Profile" class="avatar">
+          <span class="name">Kunle Ajayi</span>
+          <button class="review-btn">Reviews & Feedback</button>
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <h2>Dashboard</h2>
+        <div class="top-buttons">
+          <button>Loans Available</button>
+          <button>Repayment Options</button>
+          <button>Percentage Calculator</button>
+        </div>
+
+        <div class="cards">
+          <div class="card large">REQUEST LOAN</div>
+          <div class="card large">CHOOSE A REPAYMENT PLAN</div>
+          <div class="card small">
+            <h3>Latest Update</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Laculis diam pretium sem porttitor nibh.</p>
+            <p>Lorem ipsum dolor sit amet consectetur. Laculis diam pretium sem porttitor nibh.</p>
+            <p>Lorem ipsum dolor sit amet consectetur. Laculis diam pretium sem porttitor nibh.</p>
+          </div>
+        </div>
+
+        <button class="status-btn">Loan application status</button>
+      </section>
+      <div class="chat">💬</div>
+    </main>
+  </div>
+</body>
+</html>
